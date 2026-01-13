@@ -3,7 +3,6 @@
 import { Command } from 'commander';
 import chalk from 'chalk';
 
-
 const program = new Command();
 
 program
@@ -15,7 +14,8 @@ program
   .command('hello')
   .description('Test command')
   .action(() => {
-    console.log(chalk.green('Hello from git-ai-commit!'));
+    console.log(chalk.green('Hello World!'));
+    console.log(chalk.grey('This is styled text!'));
   });
 
 program.parse(process.argv);
